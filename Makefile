@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lsh/Desktop/work1
+CMAKE_SOURCE_DIR = /home/lsh/Desktop/opencv_test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lsh/Desktop/work1
+CMAKE_BINARY_DIR = /home/lsh/Desktop/opencv_test
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsh/Desktop/work1/CMakeFiles /home/lsh/Desktop/work1/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsh/Desktop/opencv_test/CMakeFiles /home/lsh/Desktop/opencv_test/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsh/Desktop/work1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsh/Desktop/opencv_test/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,6 +123,33 @@ main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+inferencewrapper.o: inferencewrapper.cc.o
+
+.PHONY : inferencewrapper.o
+
+# target to build an object file
+inferencewrapper.cc.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/inferencewrapper.cc.o
+.PHONY : inferencewrapper.cc.o
+
+inferencewrapper.i: inferencewrapper.cc.i
+
+.PHONY : inferencewrapper.i
+
+# target to preprocess a source file
+inferencewrapper.cc.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/inferencewrapper.cc.i
+.PHONY : inferencewrapper.cc.i
+
+inferencewrapper.s: inferencewrapper.cc.s
+
+.PHONY : inferencewrapper.s
+
+# target to generate assembly for a file
+inferencewrapper.cc.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/inferencewrapper.cc.s
+.PHONY : inferencewrapper.cc.s
+
 main.o: main.cc.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... main"
+	@echo "... inferencewrapper.o"
+	@echo "... inferencewrapper.i"
+	@echo "... inferencewrapper.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -1,0 +1,3 @@
+/home/lsh/Desktop/opencv_test/CMakeFiles/rebuild_cache.dir
+/home/lsh/Desktop/opencv_test/CMakeFiles/edit_cache.dir
+/home/lsh/Desktop/opencv_test/CMakeFiles/main.dir
